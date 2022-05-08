@@ -4,7 +4,7 @@
 <h1>Pet List</h1>
 {% for pet in pets %}
 <ul>
-    <li><img src="{{pet.photo_url}}" alt="">{{pet.name}}
+    <li><img src="{{pet.photo_url}}" alt=""><a href="/{{pet.id}}">{{pet.name}}</a>
         {% if pet.available %}
         - <strong>Available</strong>
         {% endif %}

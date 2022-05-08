@@ -11,6 +11,7 @@ def connect_db(app):
 default_image = 'https://thecontemporarypet.com/wp-content/themes/contemporarypet/images/default.png'
 
 class Pet(db.Model):
+    """This creates a 'Pet' class used to save data for each pet that is created and stored in the DB."""
     __tablename__ = 'pets'
 
     id = db.Column(
