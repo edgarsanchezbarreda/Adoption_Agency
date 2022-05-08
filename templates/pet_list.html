@@ -6,9 +6,10 @@
 <ul>
     <li><img src="{{pet.photo_url}}" alt="">{{pet.name}}
         {% if pet.available %}
-        - <strong>{{pet.available}}</strong>
+        - <strong>Available</strong>
         {% endif %}
     </li>
 </ul>
 {% endfor %}
+<a href="/add" class="btn btn-success">Add Pet</a>
 {% endblock %}
